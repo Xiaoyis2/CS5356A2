@@ -33,7 +33,6 @@ const uiConfig = {
   },
 };
 
-
   
 
 function App() {

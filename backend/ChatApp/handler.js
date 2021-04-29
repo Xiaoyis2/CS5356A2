@@ -12,6 +12,15 @@ module.exports.hello = async (event) => {
   //     2
   //   ),
   // };
+  if (event.path === '/whoami' && event.httpMethod === 'GET') {
+    return {
+      statusCode: 200,
+      body: JSON.stringify(
+        { "username": "da335"}
+      )
+    };
+  }
+
   return {
     statusCode: 200,
     body: JSON.stringify(
